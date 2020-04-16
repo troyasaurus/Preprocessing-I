@@ -182,8 +182,11 @@ body .hero-info .infoblock {
   justify-content: center;
 }
 body .hero-info .infoblock h1 {
+  margin: 2%;
   color: yellow;
   font-size: 3rem;
+  display: flex;
+  justify-content: center;
 }
 body button {
   background-color: #4CAF50;
@@ -198,6 +201,12 @@ body button {
   display: inline-block;
   font-size: 16px;
 }
-body button button:hover {
-  background-color: transparent;
+body button:hover {
+  background-color: seagreen;
+}
+body footer {
+  color: yellow;
+  margin: 4%;
+  display: flex;
+  justify-content: center;
 }
