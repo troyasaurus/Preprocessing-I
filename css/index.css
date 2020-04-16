@@ -211,8 +211,23 @@ body footer {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .hero-info {
-    border: solid black;
+  html .hero-info,
+  body .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  html .hero-info .infoblock,
+  body .hero-info .infoblock {
+    border-radius: 0rem;
+    width: 80%;
+  }
+  h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
   }
   #images {
     display: none;

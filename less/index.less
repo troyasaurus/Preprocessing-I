@@ -167,18 +167,37 @@ body {
 
 @media (max-width: 500px){
 
-		.hero-info{
+	html .hero-info, body .hero-info{
+		.dotflex();
+		flex-direction: column;
+		align-content: center;
+		width: 100%;
+		font-size: 1.5rem;
 
-			border: solid black;
+
+		.infoblock{
+			border-radius: 0rem;
+			width: 80%;
 
 		}
+		
+	}
+	h1{
+		font-size: 2rem;
+		.dotflex();
+		justify-content: center;
+	}
+
+	#images{
+		display: none;
+	}
+
+	
 
 
 
-			#images{
-				display: none;
-			}
 
-			
+	
+
 
 }
