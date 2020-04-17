@@ -54,6 +54,150 @@ table {
 }
 
 html, body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    font-size: 62.5%;
+    background-color: seagreen;
 }
 
+
+
+.dotflex(){
+	display:flex;
+}
+
+#images{
+	width: 40%;	
+	border: solid;
+	.dotflex();
+	justify-content: center;
+	align-items: center;
+	margin: 1%;
+	border-radius: 20%;
+
+	
+	
+}
+
+body {
+	margin: 2% 4%;
+	font-size: 2rem;
+
+
+
+	nav{
+		.dotflex();
+		justify-content: space-around;
+		font-size: 3rem;
+		background-color: rgb(107, 211, 152);
+		padding: 5%;
+	
+	
+
+		
+
+		a {
+			color:yellow;
+			a :hover{
+				color: blue;
+			}
+		}
+	}
+	.hero-info{
+		border: solid;
+		
+		.dotflex();
+		flex-flow: row wrap;
+		justify-content: space-between;
+			.infoblock{
+				margin: 1%;
+				padding: 1%;
+				width: 40%;
+				border: solid;
+				border-radius: 20%;
+				background-color: rgb(107, 211, 152);
+				.dotflex();
+				flex-direction: column;
+				justify-content: center;
+				
+				
+
+				h1{
+					margin: 2%;
+					color: yellow;
+					font-size: 3rem;
+					display: flex;
+					justify-content: center;	
+				}
+
+		}
+		
+
+	}
+	button {
+		background-color: #4CAF50; /* Green */
+		border: none;
+		border-radius: 2rem;
+		color: white;
+		margin: 2%;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+
+			
+	  }
+	  button:hover{
+		background-color:seagreen;
+	}
+
+	footer{
+		color: yellow;
+		margin: 4%;
+		.dotflex();
+		justify-content: center;
+
+	}
+
+
+}
+
+
+@media (max-width: 500px){
+
+	html .hero-info, body .hero-info{
+		.dotflex();
+		flex-direction: column;
+		align-content: center;
+		width: 100%;
+		font-size: 1.5rem;
+
+
+		.infoblock{
+			border-radius: 0rem;
+			width: 80%;
+
+		}
+		
+	}
+	h1{
+		font-size: 2rem;
+		.dotflex();
+		justify-content: center;
+	}
+
+	#images{
+		display: none;
+	}
+
+	
+
+
+
+
+	
+
+
+}

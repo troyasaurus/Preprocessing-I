@@ -1,1 +1,235 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 62.5%;
+  background-color: seagreen;
+}
+#images {
+  width: 40%;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  border-radius: 20%;
+}
+body {
+  margin: 2% 4%;
+  font-size: 2rem;
+}
+body nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  background-color: #6bd398;
+  padding: 5%;
+}
+body nav a {
+  color: yellow;
+}
+body nav a a :hover {
+  color: blue;
+}
+body .hero-info {
+  border: solid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+body .hero-info .infoblock {
+  margin: 1%;
+  padding: 1%;
+  width: 40%;
+  border: solid;
+  border-radius: 20%;
+  background-color: #6bd398;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .hero-info .infoblock h1 {
+  margin: 2%;
+  color: yellow;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+body button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  margin: 2%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+body button:hover {
+  background-color: seagreen;
+}
+body footer {
+  color: yellow;
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  html .hero-info,
+  body .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  html .hero-info .infoblock,
+  body .hero-info .infoblock {
+    border-radius: 0rem;
+    width: 80%;
+  }
+  h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  #images {
+    display: none;
+  }
+}
