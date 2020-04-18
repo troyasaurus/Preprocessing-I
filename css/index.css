@@ -148,7 +148,6 @@ body {
   border-radius: 20%;
 }
 body {
-  margin: 2% 4%;
   font-size: 2rem;
 }
 body nav {
@@ -156,16 +155,20 @@ body nav {
   justify-content: space-around;
   font-size: 3rem;
   background-color: #6bd398;
-  padding: 5%;
+  padding: 3%;
+  width: 100%;
+  top: 0;
+  position: fixed;
 }
 body nav a {
   color: yellow;
 }
-body nav a a :hover {
-  color: blue;
+body nav a:hover {
+  color: seagreen;
 }
 body .hero-info {
   border: solid;
+  margin: 10%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -203,6 +206,28 @@ body button {
 }
 body button:hover {
   background-color: seagreen;
+}
+body #tingle {
+  width: 15%;
+}
+body .tingle {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example {
+  from {
+    color: seagreen;
+  }
+  to {
+    color: yellow;
+  }
 }
 body footer {
   color: yellow;

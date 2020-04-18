@@ -75,13 +75,11 @@ html, body {
 	align-items: center;
 	margin: 1%;
 	border-radius: 20%;
-
-	
-	
 }
 
+
 body {
-	margin: 2% 4%;
+	
 	font-size: 2rem;
 
 
@@ -91,22 +89,22 @@ body {
 		justify-content: space-around;
 		font-size: 3rem;
 		background-color: rgb(107, 211, 152);
-		padding: 5%;
-	
-	
-
+		padding: 3%;
+		width: 100%;
+		top:0;
+		position: fixed;
 		
 
 		a {
 			color:yellow;
-			a :hover{
-				color: blue;
-			}
 		}
+		a:hover{
+			color: seagreen;
+			}
 	}
 	.hero-info{
 		border: solid;
-		
+		margin: 10%;
 		.dotflex();
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -152,7 +150,26 @@ body {
 	  button:hover{
 		background-color:seagreen;
 	}
+	#tingle{
+		width: 15%;
+	}
+	.tingle{
+		font-size: 3rem;
+		.dotflex();
+		align-items: center;
+		justify-content: center;
+		color: green;
+		animation-name: example;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+}
 
+	@keyframes example {
+		from {color: seagreen;}
+  		to {color: yellow;}
+	}
+	
 	footer{
 		color: yellow;
 		margin: 4%;
